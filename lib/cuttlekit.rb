@@ -1,3 +1,4 @@
+require 'pry'
 require "cuttlekit/version"
 
 module Cuttlekit
@@ -9,7 +10,7 @@ module Cuttlekit
         @dir = dir
         @path = path
         @repo_url = @path
-        @root_repo = !@path.empty?
+        @root_repo = @path.empty?
         @repo = commit_new_jekyll
         { repo: @repo, branch_name: branch_name }
       end
@@ -93,7 +94,7 @@ module Cuttlekit
       end
 
       def branch_name
-        return 'gh-pages' unless @path.empty?
+        return 'gh-pages' unless @root_repo
         'master'
       end
     end
