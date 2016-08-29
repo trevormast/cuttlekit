@@ -1,6 +1,8 @@
 # Cuttlekit [![GitHub version](https://badge.fury.io/gh/trevormast%2Fcuttlekit.svg)](https://badge.fury.io/gh/trevormast%2Fcuttlekit)
 ### BETA
 
+![cuttlefish](cuttlefish.png)
+
 Cuttlekit is a simple extension to [Octokit](https://github.com/octokit) that allows you to quickly commit whole directories to GitHub. 
 
 ## Installation
